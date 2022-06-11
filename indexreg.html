@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Registration pr
+    </title>
+    <style>
+        body {
+            margin: 0%;
+            padding: 0%;
+        }
+        
+        #sl {
+            color: red;
+            text-align: center;
+            margin-left: 45%;
+            font-size: 35px;
+        }
+        
+        #header {
+            margin-left: 0px;
+            margin-top: 0%;
+            position: static;
+            background-color: rgba(9, 54, 255, 0.873);
+        }
+        
+        #header span {
+            text-align: right;
+            color: #fff;
+            padding-top: 0%;
+            font-size: 45px;
+            margin-left: 35%;
+        }
+        
+        #header img {
+            height: 80px;
+            border-radius: 40px;
+            margin-top: 5px;
+        }
+        
+        div.e1 {
+            text-align: center;
+            font-size: 35px;
+            text-decoration: underline;
+            text-decoration-color: blueviolet;
+        }
+        
+        h2 {
+            text-align: center;
+            color: red;
+            text-decoration: underline;
+            text-decoration-color: blueviolet;
+        }
+        
+        div.e1 {
+            text-align: center;
+            font-size: 35px;
+            text-decoration: underline;
+            text-decoration-color: blueviolet;
+        }
+        
+        fieldset {
+            margin-left: 30%;
+            margin-right: 20%;
+        }
+        
+        span {
+            font-size: 25px;
+            color: red;
+            text-align: center;
+            margin-left: 10%;
+        }
+        
+        @media screen and (max-width:650px) {
+            fieldset {
+                margin-right: 10%;
+            }
+        }
+        
+        tr {
+            margin-top: 10px;
+        }
+    </style>
+    <script type="text/javascript">
+        function checka() {
+            document.getElementById("n").innerHTML = "Your registration is complete succesfully. Your reg.no : 52152  Password:45yu7 . When college send message than fill up full application form using this  id and password";
+            return false;
+        }
+
+        function loading() {
+            alert("Welcome in Registration Form Page");
+        }
+    </script>
+</head>
+
+<body onload="loading()">
+    <section id="header">
+        <img src="logo.jpg"><span text-align="center">Rahul College</span>
+    </section><br><br>
+    <div class="e1">REGISTRATION FORM</div><br><br>
+    <form onsubmit="return checka()">
+        <fieldset>
+            <legend>Quick Registration</legend>
+            <span>Personal Details:</span>
+            <table>
+                <tr>
+                    <td>Full Name:</td>
+                    <td><input type="text" id="fn" size="30" required><span id="M1"></span></td>
+                </tr>
+                <tr>
+                    <td>First Name:</td>
+                    <td><input type="text" id="fnname" size="30" required></td>
+                </tr>
+                <tr>
+                    <td>Middle Name:</td>
+                    <td><input type="text" id="sname" size="30" required></td>
+                </tr>
+                <tr>
+                    <td>Last Name:</td>
+                    <td><input type="text" id="lname" size="30" required></td>
+                </tr>
+                <tr>
+                    <td>Father Name:</td>
+                    <td><input type="text" id="mn" size="30" required></td>
+                </tr>
+                <tr>
+                    <td>Mother Name:</td>
+                    <td><input type="text" id="fan" size="30" required></td>
+                </tr>
+                <tr>
+                    <td>Date Of Birth:</td>
+                    <td><input type="date" id="dob" required></td>
+                </tr>
+                <tr>
+                    <td>Category:</td>
+                    <td>
+                        <select>
+                            <option value="gen">GENRAL</option>
+                            <option value="obc">OB</option>
+                            <option value="sc">SC</option>
+                            <option value="st">ST</option>
+                            <option value="other">OTHER</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>12 Passing year:</td>
+                    <td>
+                        <select>
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>   
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>12 Passing mark Out of total 700:</td>
+                    <td><input type="text" id="mark"></td>
+                </tr>
+                <tr>
+                    <td>
+                        12 Stream:
+                    </td>
+                    <td>
+                        <select>
+                            <option value="General">General</option>
+                            <option value="Science">Science</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Contact no:</td>
+                    <td><input type="tel" id="contact"></td>
+                </tr>
+                <tr>
+                    <td>E-Mail:</td>
+                    <td>
+                        <input type="mail" id="email">
+                    </td>
+                </tr>
+
+            </table>
+            <hr>
+            <span>Details fills for college:</span>
+            <br><br>
+            <table>
+                <tr>
+                    <td>Select Course:</td>
+                    <td>
+                        <select>
+                        <option value="bca">BCA</option>
+                        <option value="bcom">BCOM</option>
+                        <option value="bba">BBA</option>
+                        <option value="ba">BA</option>
+                        <option value="bed">BED</option>
+                        <option value="mca">MCA</option>
+                        <option value="mcom">MCOM</option>
+                        <option value="mba">MBA</option>
+                        <option value="mscit">MSCIT</option>
+                        <option value="ma">MA</option>
+                        <option value="bscph">BSC CHEMISTRY</option>
+                        <option value="bscnu">BSC NURSING</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>12 Seat no :</td>
+                    <td><input type="text" id="sn"></td>
+                </tr>
+                <tr>
+                    <td>12 Passing Board:</td>
+                    <td><select>
+                        <option value="gseb">GSEB</option>
+                        <option value="cbse">CBSE</option>
+                        <option value="other">OTHER</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Apply"></td>
+                    <td><input type="reset" value="Reset"></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form><br><br>
+    <span id="num"></span><br>
+    <span id="n"></span>
+</body>
+
+</html>
